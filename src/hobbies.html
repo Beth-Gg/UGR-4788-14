@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
@@ -25,7 +25,7 @@
         
     <h2>Hobbies</h2>
     
-    <article> 
+    <article class="body__article"> 
         <h3>Writing</h3>
         <p>
             From a very young age, my fingers have found their way around pen and paper.
@@ -36,7 +36,7 @@
         <img src="images/blog.png" alt="My blog page" width="300" height="300">
     </article>
 
-    <article>   
+    <article class="body__article">   
         <h3>Gardening</h3>
         <p>
           In recent years, I have found myself with an uncanny affinity to plants. Though not through
@@ -45,15 +45,17 @@
         <img src="images/gardeningg.jpg" alt="one of my flowers" width="300" height="300">       
     </article>
 
-    <article>
+    <article class="body__article">
+        <div id="body__article--text">
         <h3>Cooking</h3>
         <p>
            Although my brother will scoff at this, I do consider this a hobby. From binge watching
            cooking shows to the innumerable culinary disasters I had, it really is a whole experience. 
-        </p>
+        </p></div>
+        <div id="body__video">
         <video width="300" height="400" autoplay loop muted preload="auto" >
             <source src="images/cookingvideo.mp4" type="video/mp4">
-        </video>       
+        </video></div>       
     </article>
 
     <footer>
@@ -65,6 +67,6 @@
     <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
     <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
     </footer>
-    
+
 </body>
 </html>
