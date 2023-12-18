@@ -4,45 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Childhood</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4207f4cc54.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-            
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
-    
-            
-        </nav>
+        <div class="block">
+            <nav class="navbar has-shadow is-light">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item"><h1 class="title is-1 is-italic">Bethlehem Getachew</h1></a>
+                    <a class="navbar-burger burger" role="button" id="burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="family.html">Family</a>
+                        <a class="navbar-item" href="Education.html">Education</a>
+                        <a class="navbar-item" href="childhood.html">Childhood</a>
+                        <a class="navbar-item" href="hobbies.html">Hobbies</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <figure>
-        <img src="images/childhood1.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood2.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood3.jpg" alt="My childhood picture" width="300" height="300"><br>
-        <img src="images/childhood4.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood5.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood6.jpg" alt="My childhood picture" width="300" height="300">
 
-        <figcaption>
+    <figure class="container is-centered">
+        <div class="columns">
+            
+        <div class="image column is-6 is-offset-one-quarter is-2by1"><img class= "images column" src="images/childhood1.jpg" alt="My childhood picture"></div>
+ 
+        </div>
+            <div class="columns buttons">
+        <button class="button is-primary column is-4" id="btnprev"><i class="fa-solid fa-angles-left fa-beat-fade fa-lg"></i></button>
+        <button class="button is-primary column is-4 is-offset-3" id="btnnext"><i class="fa-solid fa-angles-right fa-beat-fade fa-lg"></i></button>
+        </div>
+        <figcaption class="is-italic is-subtitle m-5">
             <q>I spent my whole childhood wishing I were older and now I'm spending my adulthood wishing I were younger.</q>
             <footer>-Ricky Schroder</footer> 
 
             </figcaption>
     </figure>
     
-    <footer>
+    <footer class="footer">
         <address>
-        <p>Contact Info</p>
+        <p class="title">Contact Info</p>
         tel: +25198745623120 <br>
-        email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-    </address> <br> <br>
-    <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+        email:<a class="px-2" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+    </address> <br>
+    <a class="button is-primary" href="https://www.instagram.com/_bethy.g_/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a class="button is-primary" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank"><i class="fa fa-linkedin"></i></a>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

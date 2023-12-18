@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bethlehem Getachew</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4207f4cc54.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body >
     <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-          
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
-    
-            
-        </nav>
+        <div class="block">
+            <nav class="navbar has-shadow is-light">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item"><h1 class="title is-1 is-italic">Bethlehem Getachew</h1></a>
+                    <a class="navbar-burger burger" role="button" id="burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="family.html">Family</a>
+                        <a class="navbar-item" href="Education.html">Education</a>
+                        <a class="navbar-item" href="childhood.html">Childhood</a>
+                        <a class="navbar-item" href="hobbies.html">Hobbies</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     
-    <article id="article_1">
-        <img id="MyPic" src="images/Myprofile.jpg" alt="A picture of me" width="300" height="300">
-       
-        <h2>
-            Hey there,
-        </h2>
-        <p>
-            I'm Bethlehem Getachew, a 3rd year Software Engineering Student at Addis Ababa institute
-            of Technology. Keep on exploring if you wanna know more about me.
-        </p>
-      
-    </article>
 
-    <footer>
+    <div class="columns is-centered ">
+        <div class="card column is-8 is-offset-one-third m-6">
+            <div class="card-image column is-6 is-centered">
+                <img class="is-mobile" src="images/Myprofile.jpg" alt="A picture of me" width="300" height="300">
+            </div>
+            <div class="card-content">
+                <h2 class="title has-background-light"> Hey there, </h2>
+                    <p>
+                    I'm Bethlehem Getachew, a 3rd year Software Engineering Student at Addis Ababa institute
+                    of Technology. Keep on exploring if you wanna know more about me.
+                </p>
+            </div>
+        </div>
+    </div>
+        
+
+    <footer class="footer">
         <address>
-            <p>Contact Info</p>
-            tel: +25198745623120 <br>
-            email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-        </address><br> <br>
-        <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+        <p class="title">Contact Info</p>
+        tel: +25198745623120 <br>
+        email:<a class="px-2" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+    </address> <br>
+    <a class="button is-primary" href="https://www.instagram.com/_bethy.g_/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a class="button is-primary" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank"><i class="fa fa-linkedin"></i></a>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

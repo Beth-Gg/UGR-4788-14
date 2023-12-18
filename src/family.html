@@ -4,80 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4207f4cc54.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-            
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
-    
-           
-        </nav>
+        <div class="block">
+            <nav class="navbar has-shadow is-light">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item"><h1 class="title is-1 is-italic">Bethlehem Getachew</h1></a>
+                    <a class="navbar-burger burger" role="button" id="burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="family.html">Family</a>
+                        <a class="navbar-item" href="Education.html">Education</a>
+                        <a class="navbar-item" href="childhood.html">Childhood</a>
+                        <a class="navbar-item" href="hobbies.html">Hobbies</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
         
-    <main>
-        <img id="bigfampic" src="images/fampic2.jpg" alt="Our family picture" width="300" height="300">
-    <h2>Let me introduce you to my family...</h2>
-    <article>
-        <img class="soloPics" src="images/dad.jpg" alt="My dad's picture" width="300" height="300">
+        <img class="column is-full" src="images/fampic2.jpg" alt="Our family picture">
+        
+    <article class="section">
+        <div class="container">
+            <h2 class="title has-text-centered is-size-2 has-background-light">Let me introduce you to my family...</h2>
+            <div class="columns">
 
-        <h3>Getachew Beyoro</h3>
-        <p>
-            Father of two, a dear friend/brother to many, a profound advisor, a bright mind 
-            and a generous soul<br>
 
-            Currently working as a Program Manager at <abbr title="International Livestock Reasearch Institute">ILRI</abbr> 
+                <div class="column is-one-third">
+                    <div class="card is-full is-centered py-5 my-3">
+                        <div class="card-image has-text-centered px-6">
+                            <img class="is-fullwidth" src="images/dad.jpg" alt="My dad's picture" >
+                        </div>
+                        <div class="card-content is-centered">
+                            <p class="title has-text-centered is-size-3">Getachew Beyoro</p>
+                            <p>
+                                Father of two, a dear friend/brother to many, a profound advisor, a bright mind 
+                                and a generous soul<br>
+                    
+                                Currently working as a Program Manager at <abbr title="International Livestock Reasearch Institute">ILRI</abbr> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        </p>
+                <div class="column is-one-third">
+                    <div class="card is-full py-5 my-3 pb-6">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="images/mom'spic.jpg" alt="My mom's picture">
+                        </div>
+                        <div class="card-content py-4">
+                            <p class="title has-text-centered is-size-3">Bahritu Seyoum</p>
+                            <p>
+                                Mother of two, one among 12 siblings, a happygiver, the most pleasant company to be around, a natural leader,
+                                down to earth, adventerous<br>
+                    
+                                Currently working as Plan and Program Manager at <abbr title="Menschen Fuer Menschen">MfM</abbr></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="card is-full py-5 my-3">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="images/brother.jpg" alt="My brother's picture" width="300" height="300">
+                        </div>
+                        <div class="card-content px-4">
+                            <p class="title has-text-centered is-size-3">Elihu Getachew</p>
+                            <p>
+                                The first-born, chillest person ever, humble, an inspiration, the heart of
+                                the party, genuine, but simply annoying for the most part<br>
+                    
+                                Currently a trainee at Ethiopian Aviation Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </article>
-    <article>
-        <img class="soloPics" src="images/mom'spic.jpg" alt="My mom's picture" width="300" height="300">
-
-        <h3>Bahritu Seyoum</h3>
-        <p>
-            Mother of two, one among 12 siblings, a happygiver, the most pleasant company to be around, a natural leader,
-            down to earth, adventerous<br>
-
-            Currently working as Plan and Program Manager at <abbr title="Menschen Fuer Menschen">MfM</abbr>
-        </p>
-
-    </article>
-    <article>
-        <img class="soloPics" src="images/brother.jpg" alt="My brother's picture" width="300" height="300">
-
-        <h3>Elihu Getachew</h3>
-        <p>The first-born, chillest person ever, humble, an inspiration, the heart of
-            the party, genuine, but simply annoying for the most part<br>
-
-            Currently a trainee at Ethiopian Aviation Academy
-        </p>
-
-    </article>
-
-    <h2>Home sweet home...</h2>
-    <figure>    
-        <video width="300" height="500" 
+   
+<div class="container column is-centered">
+    <h2 class="title is-centered has-background-light">Home sweet home...</h2>
+    <figure> <div class="figure__video">   
+        <video id= "figure__video--black" width="300" height="500" 
         autoplay loop muted preload="auto">   
     <source src="images/familyvideo.mp4" type="video/mp4">
-    </video>
+    </video></div>
     </figure>
-
+    </div>
+</div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <address>
-        <p>Contact Info</p>
+        <p class="title">Contact Info</p>
         tel: +25198745623120 <br>
-        email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-    </address> <br> <br>
-    <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+        email:<a class="px-2" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+    </address> <br>
+    <a class="button is-primary" href="https://www.instagram.com/_bethy.g_/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a class="button is-primary" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank"><i class="fa fa-linkedin"></i></a>
     </footer>
+    
+    <script src="js/script.js"></script>
+
 </body>
 </html>
