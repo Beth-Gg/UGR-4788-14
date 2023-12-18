@@ -49,6 +49,7 @@ header {
     margin-bottom: 30px;
 }
 
+
 h1 {
     margin-top: 5px;
     padding-top: 10px;
@@ -56,6 +57,7 @@ h1 {
 }
 
 nav {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -221,10 +223,12 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 200px;
+    width: 300px;
+    height: 400px;
     height: auto;
     align-content: center ;
-    object-fit: cover;
+    object-fit:contain;
+    margin: 20px;
 }
 
 h2 + img {
@@ -232,12 +236,7 @@ h2 + img {
     width: 80%;
     height: 60%;
 }
-.figure__image {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30vw;
 
-}
 header + h1 {
     font-size: 3.8vw;
     margin: auto;
@@ -309,14 +308,150 @@ p > a {
 #body__video {
     display: flex;
 }
+
+.container{
+    display: block;
+}
+.imgs {
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    display: block;
+    margin-right: 10%;
+    margin-left: 10vw;
+}
+
+.button{
+    width: 40vw;
+    background-color: #E2D9CD;
+    border-color: #392E26;
+   
+}
+
+
+.figure__image {
+    width: 100%;
+    max-height: 100%;
+       /* margin: auto; */
+       aspect-ratio: 1/1 ;
+       object-fit: cover;
+       object-position: top;
+   
+   }
+   
+   .img_slider {
+       position: relative;
+   }
+   
+   .img_box {
+       position: relative;
+       display: inline-block;
+       /* width: 70%; */
+   }
+   
+   .button-container {
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+       padding: 10px;
+   }
+   
+   .btn {
+       background-color: #3a281c;
+       color: #E2D9CD;
+       border: none;
+       padding: 10px;
+       cursor: pointer;
+       border-radius: 10px;
+       border-style:groove
+   }
+   
+   .btn {
+       margin: 5px;
+   }
+
+
 @media only screen and (max-width: 766px) {
 
     #article__header {
         padding-left: 20%;
         margin-right: 3%;
     }
+
+nav {
+    display: flex;
+    justify-content: space-between;
 }
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    height: 80vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #392E26;
+    transition: top 1s ease;
+    display: none;
+    color: #E2D9CD;
+
+}
+nav .mainMenu .closeMenu {
+    display: block;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+nav .openMenu {
+    display: block;
+
+}
+i {
+    display: inline-block;
+    padding: 12px;
+    font-size: 1.8rem;
+}
+
+nav .mainMenu li a:hover {
+    background: none;
+    color: #B5BDAC;
+    font-size: 1.6rem;
+}
+nav .mainMenu li a{
+    color: #E2D9CD;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+}
+
+
 @media only screen and (min-width: 767px) {
+ 
+    .figure__image{
+        width: 300px;
+        height: 400px;
+    }
+    .fa{
+        display: none;
+        visibility: hidden;
+    }
+    li {
+        display: inline-block
+    }
     #article--card {
         display: flex;
         flex-wrap: wrap;
@@ -329,14 +464,14 @@ p > a {
     #article__text--center {
         width: 45%;
         flex-wrap: nowrap;
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
    
     #article__text{
         margin: auto;
         width: 100%;
     }
+
     .article{
         display: flex;
         flex-wrap: wrap;
@@ -347,12 +482,9 @@ p > a {
         margin: 5px;
         height: 100%;
         width: 100%;
-
-
     }
   
     .main__article--card {
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -363,8 +495,8 @@ p > a {
         margin-bottom: 1%;
         height: 100%;
         max-width: 100%;
-
     }
+
     .main__article--card article {
         padding: 5px;
         margin: 1%;
@@ -398,7 +530,7 @@ p > a {
             height: 95%;
             padding: 5px;
     } 
-    }
+}
 @media screen and (min-width: 1023px) {
 
     .main__article--card article {
@@ -407,3 +539,8 @@ p > a {
         max-width: 30%;
     }   
 }
+
+
+
+
+
