@@ -4,63 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/4207f4cc54.js" crossorigin="anonymous"></script>
+
 
 </head>
-<body>
-    <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-            
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
+<body class="bg-black text-white">
     
-            
-        </nav>
-    </header>
+    <div class="inline justify-normal align-baseline my-1 mx-1 p-1">
+        <div class="container">
+            <button id="toggleButton" class="lg:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <h1 class="text-4xl text-left m-3 inline font-bold text-yellow-300">Bethlehem Getachew</h1>      
+        </div>
+       
+       
+        <div id="navbarLinks" class="hidden lg:flex lg:flex-row lg:justify-end lg:space-x-4">
+            <nav class="lg:flex">      
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="index.html">HOME</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="family.html">FAMILY</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="Education.html">EDUCATION</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="childhood.html">CHILDHOOD</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="hobbies.html">HOBBIES</a>   
+            </nav>
+       </div>
+    </div>
     
-    <h1>A snippet of my educational background</h1>
-    <h2>Schools I Attended</h2>
-    <figure>
-        <img src="images/Ethio-Parents-School.jpg" alt="school logo" width="250" height="200"> <br>
-        <img src="images/SOT.jfif" alt="school logo" width="250" height="200"> <br>
-        <img src="images/aau.jpg" alt="school logo" width="250" height="200"> <br>
+    <h1 class="text-yellow-200 text-3xl font-medium mx-auto m-5 p-3 flex justify-center">A snippet of my educational background</h1>
+    <h2 class="text-yellow-200 text-3xl font-medium mx-auto m-5 p-3 flex justify-center">Schools I Attended</h2>
+    
+    
+    
+
+    <figure class="lg:flex">
+     
+        <img class="mx-auto m-2 p-2 rounded-xl" src="images/Ethio-Parents-School.jpg" alt="school logo" width="400"> <br>
+        <img class="mx-auto m-2 p-2 rounded-xl" src="images/SOT.jfif" alt="school logo" width="400"> <br>
+        <img class="mx-auto m-2 p-2 rounded-xl" src="images/aau.jpg" alt="school logo" width="400"> <br>
 
     </figure>
-    <table>
-        <tr>
+    
+    
+    <table class="table mx-auto">
+        <tr class="table-row m-5 p-5">
             <td>Paradise School</td>
             <td>2006-2010</td>
         </tr>
-        <tr>
+        <tr class="table-row">
             <td>Ethio-Parents School</td>
             <td>2012-2017</td>
         </tr>
-        <tr>
+        <tr class="table-row">
             <td>School of Tomorrow</td>
             <td>2018-2021</td>
         </tr>
-        <tr>
+        <tr class="table-row">
             <td>Addis Ababa University</td>
             <td>2022-present</td>
         </tr>
     </table>
-    <h2>Certificate</h2>
-    <img src="images/certificate.jpg" alt="My certificate" width="300" height="300"> <br>
-    <a href="images/CertificateBethlehemBeyoro.pdf" target="_blank">My Certificate</a>
+    <h2 class="text-yellow-200 text-3xl font-medium mx-auto m-5 p-3 flex justify-center">Certificate</h2>
+    <img class="mx-auto" src="images/certificate.jpg" alt="My certificate">
+    
+    <a class="text-yellow-100 font-medium text-xl mx-auto p-1 hover:bg-yellow-200 hover:text-black" href="images/CertificateBethlehemBeyoro.pdf" target="_blank">My Certificate</a>
 
-    <footer>
+    <div class="border-t-2 m-w-full rounded m-3 p-3">
+        <footer class="">
         <address>
-        <p>Contact Info</p>
-        tel: +25198745623120 <br>
-        email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-    </address> <br> <br>
-    <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
-    </footer>
+            <p class="font-medium p-1">Contact Info</p>
+            tel: +25198745623120 <br>
+            email:<a class="italic hover:bg-yellow-300 hover:text-black p-1 rounded-md" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+        </address><br> <br>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+    </footer> 
+    </div>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.getElementById('navbarLinks').classList.toggle('hidden');
+        });
+    </script>
+    
 
 </body>
 </html>

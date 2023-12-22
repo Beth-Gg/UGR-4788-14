@@ -4,45 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Childhood</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-            
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
-    
-            
-        </nav>
-    </header>
-    <figure>
-        <img src="images/childhood1.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood2.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood3.jpg" alt="My childhood picture" width="300" height="300"><br>
-        <img src="images/childhood4.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood5.jpg" alt="My childhood picture" width="300" height="300">
-        <img src="images/childhood6.jpg" alt="My childhood picture" width="300" height="300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
 
-        <figcaption>
+</head>
+<body class="bg-black text-white">
+
+
+
+    
+    <div class="inline justify-normal align-baseline my-1 mx-1 p-1">
+        <div class="container">
+            <button id="toggleButton" class="lg:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <h1 class="text-4xl text-left m-3 inline font-bold text-yellow-300">Bethlehem Getachew</h1>      
+        </div>
+       
+       
+        <div id="navbarLinks" class="hidden lg:flex lg:flex-row lg:justify-end lg:space-x-4">
+            <nav class="lg:flex">      
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="index.html">HOME</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="family.html">FAMILY</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="Education.html">EDUCATION</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="childhood.html">CHILDHOOD</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="hobbies.html">HOBBIES</a>   
+            </nav>
+       </div>
+    </div>
+    
+    
+    <figure class="md:flex md:flex-wrap lg:flex lg:flex-wrap container mx-auto">
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood1.jpg" alt="My childhood picture" width="300" height="300">
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood2.jpg" alt="My childhood picture" width="300" height="300">
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood3.jpg" alt="My childhood picture" width="300" height="300"><br>
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood4.jpg" alt="My childhood picture" width="300" height="300">
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood5.jpg" alt="My childhood picture" width="300" height="300">
+        <img class="m-2 p-2 rounded-2xl mt-4 mx-auto" src="images/childhood6.jpg" alt="My childhood picture" width="300" height="300">
+
+        <figcaption class="container m-5 ">
             <q>I spent my whole childhood wishing I were older and now I'm spending my adulthood wishing I were younger.</q>
-            <footer>-Ricky Schroder</footer> 
+            <footer class="bg-yellow-200 text-black">-Ricky Schroder</footer> 
 
             </figcaption>
     </figure>
     
-    <footer>
+    <div class="border-t-2 m-w-full rounded m-3 p-3">
+        <footer class="">
         <address>
-        <p>Contact Info</p>
-        tel: +25198745623120 <br>
-        email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-    </address> <br> <br>
-    <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+            <p class="font-medium p-1">Contact Info</p>
+            tel: +25198745623120 <br>
+            email:<a class="italic hover:bg-yellow-300 hover:text-black p-1 rounded-md" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+        </address><br> <br>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
     </footer>
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.getElementById('navbarLinks').classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>

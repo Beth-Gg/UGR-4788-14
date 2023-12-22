@@ -4,80 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+
 </head>
-<body>
-    <header>
-        <h1>Bethlehem Getachew</h1>
-        <nav>
-            
-                <a href="index.html">HOME</a>
-                <a href="family.html">FAMILY</a>
-                <a href="Education.html">EDUCATION</a>
-                <a href="childhood.html">CHILDHOOD</a>
-                <a href="hobbies.html">HOBBIES</a>
+<body class="bg-black text-white">
     
-           
-        </nav>
-    </header>
+    <div class="inline justify-normal align-baseline my-1 mx-1 p-1">
+        <div class="container">
+            <button id="toggleButton" class="lg:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <h1 class="text-4xl text-left m-3 inline font-bold text-yellow-300">Bethlehem Getachew</h1>      
+        </div>
+       
+       
+        <div id="navbarLinks" class="hidden lg:flex lg:flex-row lg:justify-end lg:space-x-4">
+            <nav class="lg:flex md:block">      
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="index.html">HOME</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="family.html">FAMILY</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="Education.html">EDUCATION</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="childhood.html">CHILDHOOD</a>
+                <a class=" bg-yellow-300 rounded-sm p-2 m-1 hover:bg-transparent sm:block hover:text-white text-black" href="hobbies.html">HOBBIES</a>   
+            </nav>
+       </div>
+    </div>
         
-    <main>
-        <img id="bigfampic" src="images/fampic2.jpg" alt="Our family picture" width="300" height="300">
-    <h2>Let me introduce you to my family...</h2>
-    <article>
-        <img class="soloPics" src="images/dad.jpg" alt="My dad's picture" width="300" height="300">
+    
+    
+    
+        <img src="images/fampic2.jpg" alt="Our family picture">
+    
+    
+        <h2 class="text-yellow-200 text-3xl font-medium mx-auto m-5 p-3 flex justify-center">Let me introduce you to my family...</h2>
+    
+    <div class="container mx-auto md:flex md:flex-wrap lg:flex-wrap lg:flex">
+        <article class="my-5">
+            <img class="mx-auto" src="images/dad.jpg" alt="My dad's picture" width="300" height="300">
+            <div class="w-96 mx-auto my-5">
+                <h3 class="text-yellow-100 font-medium text-xl mx-auto my-3">Getachew Beyoro</h3>
+                <p>
+                    Father of two, a dear friend/brother to many, a profound advisor, a bright mind 
+                    and a generous soul<br>
+        
+                    Currently working as a Program Manager at <abbr title="International Livestock Reasearch Institute">ILRI</abbr> 
+        
+                </p>
+            </div>   
+        </article>
 
-        <h3>Getachew Beyoro</h3>
-        <p>
-            Father of two, a dear friend/brother to many, a profound advisor, a bright mind 
-            and a generous soul<br>
+        <article class="my-5">
+            <img class="mx-auto" src="images/mom'spic.jpg" alt="My mom's picture" width="300" height="300">
+            <div class="w-96 mx-auto my-5">
+                <h3 class="text-yellow-100 font-medium text-xl mx-auto my-3">Bahritu Seyoum</h3>
+                <p>
+                    Mother of two, one among 12 siblings, a happygiver, the most pleasant company to be around, a natural leader,
+                    down to earth, adventerous<br>
+        
+                    Currently working as Plan and Program Manager at <abbr title="Menschen Fuer Menschen">MfM</abbr> 
+        
+                </p>
+            </div>
+        </article>
 
-            Currently working as a Program Manager at <abbr title="International Livestock Reasearch Institute">ILRI</abbr> 
-
-        </p>
-    </article>
-    <article>
-        <img class="soloPics" src="images/mom'spic.jpg" alt="My mom's picture" width="300" height="300">
-
-        <h3>Bahritu Seyoum</h3>
-        <p>
-            Mother of two, one among 12 siblings, a happygiver, the most pleasant company to be around, a natural leader,
-            down to earth, adventerous<br>
-
-            Currently working as Plan and Program Manager at <abbr title="Menschen Fuer Menschen">MfM</abbr>
-        </p>
-
-    </article>
-    <article>
-        <img class="soloPics" src="images/brother.jpg" alt="My brother's picture" width="300" height="300">
-
-        <h3>Elihu Getachew</h3>
-        <p>The first-born, chillest person ever, humble, an inspiration, the heart of
-            the party, genuine, but simply annoying for the most part<br>
-
-            Currently a trainee at Ethiopian Aviation Academy
-        </p>
-
-    </article>
-
-    <h2>Home sweet home...</h2>
-    <figure>    
+        <article class="my-8">
+            <img class="mx-auto" src="images/brother.jpg" alt="My brother's picture" width="300" height="300">
+            <div class="w-96 mx-auto my-5">
+                <h3 class="text-yellow-100 font-medium text-xl mx-auto my-3">Elihu Getachew </h3>
+                <p>
+                    The first-born, chillest person ever, humble, an inspiration, the heart of
+                        the party, genuine, but simply annoying for the most part<br>
+            
+                        Currently a trainee at Ethiopian Aviation Academy 
+                </p>
+            </div>   
+        </article>
+    </div>
+    
+       
+    <h2 class="text-yellow-200 text-3xl font-medium mx-auto m-5 p-3 flex justify-center">Home sweet home...</h2>
+    <figure class="mx-auto flex justify-center m-5">    
         <video width="300" height="500" 
         autoplay loop muted preload="auto">   
     <source src="images/familyvideo.mp4" type="video/mp4">
     </video>
     </figure>
 
-    </main>
+    
 
-    <footer>
+    
+    
+    <div class="border-t-2 m-w-full rounded m-3 p-3">
+        <footer class="">
         <address>
-        <p>Contact Info</p>
-        tel: +25198745623120 <br>
-        email:<a href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
-    </address> <br> <br>
-    <a href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
+            <p class="font-medium p-1">Contact Info</p>
+            tel: +25198745623120 <br>
+            email:<a class="italic hover:bg-yellow-300 hover:text-black p-1 rounded-md" href="mailto:bethlehemgech@gmail.com" target="_blank">bethlehemgech@gmail.com</a> 
+        </address><br> <br>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.instagram.com/_bethy.g_/" target="_blank">Instagram</a>
+        <a class="p-1 border m-2 hover:bg-transparent hover:text-white bg-yellow-300 text-black rounded-sm" href="https://www.linkedin.com/in/bethlehem-getachew-80795b258/" target="_blank">LinkedIn</a>
     </footer>
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.getElementById('navbarLinks').classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
